@@ -29,6 +29,20 @@ CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
 COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
 
 
+--
+-- Name: uuid-ossp; Type: EXTENSION; Schema: -; Owner: 
+--
+
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp" WITH SCHEMA public;
+
+
+--
+-- Name: EXTENSION "uuid-ossp"; Type: COMMENT; Schema: -; Owner: 
+--
+
+COMMENT ON EXTENSION "uuid-ossp" IS 'generate universally unique identifiers (UUIDs)';
+
+
 SET default_tablespace = '';
 
 SET default_with_oids = false;
@@ -2217,6 +2231,8 @@ COPY public.compliance (secondary_compliance, primary_compliance, report_uuid, p
 1	1	9fac579a-e3f1-4026-9972-7d1f65f6cc90	7dc0efc3-62a2-459c-9599-c308adb7d3e3	a68bb43a-b72f-4fa5-ab50-454cc1a462b4	1
 1	1	9fac579a-e3f1-4026-9972-7d1f65f6cc90	562b39ad-4803-4329-9239-470a08483018	c34efb82-0e8c-429a-a0e0-0743e03d0002	1
 1	1	9fac579a-e3f1-4026-9972-7d1f65f6cc90	15a0cbc3-217e-4097-a939-f4c319621ff1	30c18d8b-ff2d-4fac-b366-2d11e8af7fb6	1
+1	1	9fac579a-e3f1-4026-9972-7d1f65f6cc90	2b18dcba-0dfa-4faf-94f1-d1cb509bf746	3849b390-5147-463b-8205-11b59db3e1a3	2
+1	1	9fac579a-e3f1-4026-9972-7d1f65f6cc90	c0469927-5a10-4ee2-ba41-bbeb3fac2750	72500a3e-9031-4fd5-a0f6-13fa99b9219d	1
 \.
 
 
@@ -5737,6 +5753,15 @@ a68bb43a-b72f-4fa5-ab50-454cc1a462b4	234
 c34efb82-0e8c-429a-a0e0-0743e03d0002	234
 c34efb82-0e8c-429a-a0e0-0743e03d0002	235
 30c18d8b-ff2d-4fac-b366-2d11e8af7fb6	235
+3849b390-5147-463b-8205-11b59db3e1a3	152
+3849b390-5147-463b-8205-11b59db3e1a3	153
+3849b390-5147-463b-8205-11b59db3e1a3	154
+3849b390-5147-463b-8205-11b59db3e1a3	155
+72500a3e-9031-4fd5-a0f6-13fa99b9219d	223
+72500a3e-9031-4fd5-a0f6-13fa99b9219d	224
+72500a3e-9031-4fd5-a0f6-13fa99b9219d	225
+72500a3e-9031-4fd5-a0f6-13fa99b9219d	226
+72500a3e-9031-4fd5-a0f6-13fa99b9219d	227
 \.
 
 
